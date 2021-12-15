@@ -1,0 +1,119 @@
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+body {
+  background-image: url('background3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+ 
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+      
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+html, body {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+html, body {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+article h1 {
+	padding:5px;
+	border-left:5px solid #333;    
+}
+
+article {
+  padding:5px;
+  display:inline-block;
+}
+clubs {
+    width:290px;
+    vertical-align:top;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+#more {display: none;}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: red;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats */
+.row:after {
+  content: "";
+  display: table;
+   clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
